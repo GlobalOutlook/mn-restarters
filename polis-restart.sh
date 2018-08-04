@@ -5,7 +5,11 @@
 
 echo "Stopping Polis"
 polis-cli stop
-echo "Sleeping....."
+echo "Sleeping 1....."
+sleep 1
+echo "Getting info to ensure we are shutting down"
+polis-cli getinfo
+echo "Sleeping 5...."
 sleep 5
 echo "Rebooting now!"
 reboot
