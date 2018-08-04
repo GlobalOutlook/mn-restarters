@@ -6,6 +6,6 @@
 echo "Stopping Polis"
 polis-cli stop
 echo "Sleeping....."
-sleep 10
+sleep 5
 echo "Rebooting now!"
 reboot
