@@ -6,7 +6,7 @@
 cd ~/.poliscore/
 
 # Download the appropriate scripts
-wget https://github.com/GlobalOutlook/mn-restarters/blob/master/polis-restart.sh
+wget https://raw.githubusercontent.com/GlobalOutlook/mn-restarters/master/polis-restart.sh
 
 # create log file if it doesn't exist
 touch restart.log
