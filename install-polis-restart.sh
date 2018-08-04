@@ -13,5 +13,5 @@ touch restart.log
 
 # Create a cronjob for making sure smartcashd is always running
 if ! crontab -l | grep "~/.poliscore/polis-restart.sh"; then
-  (crontab -l ; echo "0 0 9 1/1 * ? * ~/.poliscore/polis-restart.sh >> ~/.poliscore/restart.log 2>&1") | crontab -
+  (crontab -l ; echo "0 9 * * * ~/.poliscore/polis-restart.sh >> ~/.poliscore/restart.log 2>&1") | crontab -
 fi
