@@ -14,6 +14,10 @@ rm ~/.poliscore/polis-restart.sh
 echo "Downloading the latest version of the script"
 wget https://raw.githubusercontent.com/GlobalOutlook/mn-restarters/master/polis-restart.sh
 
+# Give execute permission to the cron scripts
+echo "Setting permission on the script"
+chmod 0700 ./polis-restart.sh
+
 # create log file if it doesn't exist
 echo "Creating the restart.log file if it does not exist"
 touch restart.log
