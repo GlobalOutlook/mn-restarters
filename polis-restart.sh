@@ -4,12 +4,12 @@
 # 0 0 9 1/1 * ? * ~/.poliscore/polis-restart.sh
 
 echo "Stopping Polis"
-polis-cli stop
+~/.poliscore/polis-cli stop
 echo "Sleeping 1....."
 sleep 1
 echo "Getting info to ensure we are shutting down"
-polis-cli getinfo
+~/.poliscore/polis-cli getinfo
 echo "Sleeping 5...."
 sleep 5
 echo "Rebooting now!"
-reboot
+/sbin/reboot
